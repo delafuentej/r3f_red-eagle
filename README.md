@@ -8,12 +8,15 @@
 
 This project is based on the tutorial **"Reproduce Atmos Awwwards 3D Website with React Three Fiber"**, where we recreated the dynamic, award-winning experience in a step-by-step process.
 
+- (No commercial use intended — purely educational and inspirational.)
+  -(Tribute to Helloween — Song: 'Eagle Fly Free')
+
 ---
 
 ## 🌐 Live Demo
 
 Experience the Interactive Web Clone:
-🔗 https://react-awwards-spylt-clone.vercel.app/
+🔗 https://r3f-red-eagle.vercel.app/
 
 🌍 Deployment
 This app is deployed via Vercel, enabling fast global hosting with zero-config.
@@ -31,7 +34,8 @@ Through this project, you will learn how to:
 | Technology          | Usage                       |
 | ------------------- | --------------------------- |
 | [React Three Fiber] | Core 3D rendering framework |
-| [Three.js]          | Low-level 3D graphics       |
+| [React Three Drei]  | Utility components/helpers  |
+| [Three.js]          | Core 3D rendering engine    |
 | [GSAP]              | Animation engine            |
 | [Lamina]            | Gradient backgrounds in R3F |
 | [React]             | Frontend framework          |
