@@ -11,11 +11,11 @@ const Overlay = () => {
     if (end) {
       const tl = gsap.timeline();
 
-      tl.to(".outro__text", {
+      tl.to(".outro__text p", {
         duration: 2,
         opacity: 0,
         y: -50,
-        delay: 5,
+        delay: 8,
         ease: "power2.out",
       })
         .set(
@@ -47,7 +47,19 @@ const Overlay = () => {
             },
           },
           "<"
-        );
+        )
+        .to(
+          ".blackout",
+          {
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.inOut",
+          },
+          "+=5" // Espera un poco antes del fade to black
+        )
+        .add(() => {
+          location.reload(); // Recarga la página después de la animación
+        });
 
       return () => tl.kill();
     }
@@ -73,7 +85,9 @@ const Overlay = () => {
               <div className="spinner__image" />
             </div>
           </h1>
-          <p className="intro__scroll">Scroll to begin the journey</p>
+          {play && !end && (
+            <p className="intro__scroll">Scroll to begin the flight</p>
+          )}
 
           {!end && (
             <button
@@ -95,8 +109,13 @@ const Overlay = () => {
           <p>Let's time behind,</p>
           <p>follow the sign,</p>
           <p>together we'll fly someday</p>
+          <span className="credit">
+            (Tribute to Helloween--Song: "Eagle Fly Free")
+          </span>
         </p>
       </div>
+
+      <div className="blackout" />
     </div>
   );
 };

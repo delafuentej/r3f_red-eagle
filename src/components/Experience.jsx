@@ -7,7 +7,6 @@ import {
   // Line,
   PerspectiveCamera,
   useScroll,
-  Text,
 } from "@react-three/drei";
 import gsap from "gsap";
 import { usePlay } from "../contexts/Play";
@@ -52,13 +51,13 @@ const Experience = () => {
   //   return curve.getPoints(LINE_NB_POINTS);
   // }, [curve]);
 
-  const shape = useMemo(() => {
-    const shape = new THREE.Shape();
-    shape.moveTo(0, -0.08);
-    shape.lineTo(0, 0.08);
+  // const shape = useMemo(() => {
+  //   const shape = new THREE.Shape();
+  //   shape.moveTo(0, -0.08);
+  //   shape.lineTo(0, 0.08);
 
-    return shape;
-  }, [curve]);
+  //   return shape;
+  // }, [curve]);
 
   const cameraGroup = useRef();
   const cameraRail = useRef();
@@ -102,7 +101,7 @@ const Experience = () => {
       sceneOpacity.current = THREE.MathUtils.lerp(
         sceneOpacity.current,
         0,
-        delta
+        delta * 0.4
       );
     }
 

@@ -13,8 +13,8 @@ export const getTextSections = (curvePoints) => [
   {
     cameraRailDist: 1.5,
     position: new THREE.Vector3(
-      curvePoints[2].x + 2,
-      curvePoints[2].y,
+      curvePoints[2].x + 1,
+      curvePoints[2].y + 2,
       curvePoints[2].z
     ),
     title: "A Flight Beyond Time",
@@ -24,7 +24,7 @@ export const getTextSections = (curvePoints) => [
     cameraRailDist: -1,
     position: new THREE.Vector3(
       curvePoints[3].x - 3,
-      curvePoints[3].y,
+      curvePoints[3].y + 2,
       curvePoints[3].z
     ),
     title: "Where Dreams Take Flight",
@@ -34,7 +34,7 @@ export const getTextSections = (curvePoints) => [
     cameraRailDist: 1.5,
     position: new THREE.Vector3(
       curvePoints[4].x - 3,
-      curvePoints[4].y,
+      curvePoints[4].y + 2,
       curvePoints[4].z
     ),
     title: "The Ascent of Truth",
@@ -45,7 +45,7 @@ the path is made where courage goes.`,
     cameraRailDist: -1,
     position: new THREE.Vector3(
       curvePoints[5].x - 3,
-      curvePoints[5].y,
+      curvePoints[5].y + 2,
       curvePoints[5].z
     ),
     title: "Legacy of the Sky",
@@ -55,7 +55,7 @@ the path is made where courage goes.`,
     cameraRailDist: 1.5,
     position: new THREE.Vector3(
       curvePoints[6].x - 3,
-      curvePoints[6].y,
+      curvePoints[6].y + 2,
       curvePoints[6].z
     ),
     title: "The Higher Path",

@@ -8,22 +8,22 @@ Title: Eagle
 
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { useControls } from "leva";
+// import { useControls } from "leva";
 
 const Eagle = (props) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/models/eagle/eagle.glb");
   const { actions } = useAnimations(animations, group);
 
-  const { animation } = useControls("Eagle Fly Free", {
-    animation: { value: "", options: Object.keys(actions) },
-  });
-  useEffect(() => {
-    if (animation && actions[animation]) {
-      Object.values(actions).forEach((action) => action.stop());
-      actions[animation].play();
-    }
-  }, [animation, actions]);
+  // const { animation } = useControls("Eagle Fly Free", {
+  //   animation: { value: "", options: Object.keys(actions) },
+  // });
+  // useEffect(() => {
+  //   if (animation && actions[animation]) {
+  //     Object.values(actions).forEach((action) => action.stop());
+  //     actions[animation].play();
+  //   }
+  // }, [animation, actions]);
 
   useEffect(() => {
     actions["Animation"].play();

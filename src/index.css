@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -108,7 +108,7 @@ body {
 .intro__scroll {
   opacity: 0;
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05rem;
   position: absolute;
@@ -188,9 +188,30 @@ body {
 }
 
 .outro__text {
-  font-family: "Inter", sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 1.5rem;
   color: white;
+  text-transform: uppercase;
+}
+
+.credit {
+  display: block;
+  font-size: 0.75rem; /* letra pequeña */
+  color: whitesmoke; /* gris claro */
+  font-style: italic;
+  text-align: right;
+  margin-top: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.blackout {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* RESPONSIVE */

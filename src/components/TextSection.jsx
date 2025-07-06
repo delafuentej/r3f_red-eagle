@@ -8,17 +8,17 @@ const TextSection = ({ title, subtitle, ...props }) => {
     <group {...props}>
       {!!title && (
         <Text
-          color="gold"
+          color="#81318b"
           anchorX={"left"}
           anchorY={"bottom"}
           fontSize={0.52}
-          maxWidth={3}
+          maxWidth={4.25}
           lineHeight={1}
-          font={"/fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf"}
+          font={"/fonts/Cinzel/Cinzel-VariableFont_wght.ttf"}
         >
           {title}
           <meshStandardMaterial
-            color={"gold"}
+            color={"white"}
             onBeforeCompile={fadeOnBeforeCompileFlat}
           />
         </Text>
@@ -29,8 +29,8 @@ const TextSection = ({ title, subtitle, ...props }) => {
         anchorX={"left"}
         anchorY={"top"}
         fontSize={0.2}
-        maxWidth={3}
-        font={"/fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf"}
+        maxWidth={4.5}
+        font={"/fonts/Cinzel/Cinzel-VariableFont_wght.ttf"}
       >
         {subtitle}
       </Text>
