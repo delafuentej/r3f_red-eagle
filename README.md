@@ -1,6 +1,6 @@
 # 🦅 Red Eagle
 
-**Red Eagle** is an interactive 3D web experience inspired by the Atmos Awwwards-winning website, built using [React Three Fiber](https://docs.pmnd.rs/react-three-fiber). This project showcases a fully immersive scrolling journey through the sky, complete with clouds, an eagle in flight, and animated text transitions. It demonstrates the power of Three.js in a modern frontend stack to create visually stunning web interfaces.
+**Red Eagle** is an interactive 3D web experience inspired by the Atmos Awwwards-winning website, built using [React Three Fiber](https://docs.pmnd.rs/react-three-fiber). This project showcases a fully immersive scrolling journey through the sky, complete with clouds, an eagle in flight, and animated text transitions. It demonstrates the power of Three.js & React-Three-Fiber in a modern frontend stack to create visually stunning web interfaces.
 
 ---
 
@@ -67,6 +67,14 @@ This website includes:
 - ⚡ Create a **speed-based scrolling effect** to simulate motion and dynamics.
 - 📱 Ensure full **responsiveness** across devices using **media queries**.
 - 🕹 Design **intro and outro screens** for a smooth user experience.
+
+## ✨ 3D Model Attribution:
+
+- Model: "Eagle"
+- Author: kenchoo – https://sketchfab.com/kenchoo
+- License: CC BY-NC 4.0 – http://creativecommons.org/licenses/by-nc/4.0/
+- Source: https://sketchfab.com/3d-models/eagle-dc34aa716318405d974883908181fb41
+- Converted with: https://github.com/pmndrs/gltfjsx
 
 ## 📦 Getting Started
 
