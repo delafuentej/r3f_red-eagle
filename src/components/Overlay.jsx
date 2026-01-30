@@ -25,7 +25,7 @@ const Overlay = () => {
             scale: 1,
             transformOrigin: "center center",
           },
-          "<"
+          "<",
         )
         .to(
           ".logo",
@@ -34,7 +34,7 @@ const Overlay = () => {
             duration: 2,
             ease: "power2.out",
           },
-          "<"
+          "<",
         )
         .to(
           ".img-logo",
@@ -46,7 +46,7 @@ const Overlay = () => {
               setReplay(false);
             },
           },
-          "<"
+          "<",
         )
         .to(
           ".blackout",
@@ -55,7 +55,7 @@ const Overlay = () => {
             duration: 1.5,
             ease: "power2.inOut",
           },
-          "+=5" // Espera un poco antes del fade to black
+          "+=5", // Espera un poco antes del fade to black
         )
         .add(() => {
           location.reload(); // Recarga la página después de la animación
@@ -110,7 +110,7 @@ const Overlay = () => {
           <p>follow the sign,</p>
           <p>together we'll fly someday</p>
           <span className="credit">
-            (Tribute to Helloween--Song: "Eagle Fly Free")
+            (Tribute to Helloween: "Eagle Fly Free")
           </span>
         </p>
       </div>
